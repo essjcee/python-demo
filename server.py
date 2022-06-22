@@ -5,7 +5,8 @@ from flask_restful import Api, Resource
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return """<h2>Products Rest API using Flask </h2>
+    <a href='api/Products'>View products</a>"""
 api = Api(app)
 
 # Create some sample data (a list of Product objects).
