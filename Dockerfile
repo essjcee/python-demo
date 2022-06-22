@@ -18,7 +18,7 @@ COPY ${PYTHON_MAIN_FILE} /app/main.py
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # Make port 5000 available to the world outside this container.
-EXPOSE 5000
+EXPOSE 8080
 
 # Run main.py when the container launches.
 ENTRYPOINT ["python", "main.py"]
