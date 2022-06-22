@@ -9,7 +9,7 @@ RUN mkdir /app
 
 # Set the working directory inside the container to /app.
 WORKDIR /app
-
+# Port issues
 # Copy files from the current directory into the container's /app directory.
 COPY ./requirements.txt /app
 COPY ${PYTHON_MAIN_FILE} /app/main.py
