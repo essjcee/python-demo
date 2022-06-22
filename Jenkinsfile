@@ -4,7 +4,7 @@ def dockerImageTag = "${projectName}:${version}"
 
 pipeline {
   agent any
-
+  stages {
     stage('Build Container') {
       steps {
         sh "docker build -t ${dockerImageTag} --build-arg PYTHON_MAIN_FILE=server.py ."
@@ -21,3 +21,4 @@ pipeline {
       }
     }
   }
+}
