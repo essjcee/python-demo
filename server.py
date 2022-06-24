@@ -5,7 +5,7 @@ from flask_restful import Api, Resource
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return """<h2 style='color:blue'>Products Rest API using Flask </h2>
+    return """<h2 style='color:pink'>Products Rest API using Flask</h2>
     <a href='api/Products'>View products</a>"""
 api = Api(app)
 
