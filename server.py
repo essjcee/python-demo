@@ -5,7 +5,7 @@ from flask_restful import Api, Resource
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return """<h2 style='color:red;background-color:yellow'>Products Rest API using Flask</h2>
+    return """<h2 style='color:blue;background-color:aqua'>Products Rest API using Flask</h2>
     <a href='api/Products'>View products</a>"""
 api = Api(app)
 
@@ -25,8 +25,8 @@ products = [
     },
     {
         "id": 2,
-        "description": "Bugatti Divo",
-        "price": 4000000,
+        "description": "Porsche 911",
+        "price": 6000000,
         "unitsInStock": 2
     },
     {
